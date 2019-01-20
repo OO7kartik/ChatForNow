@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
+</head>
+<body>
+
+<h1>ChatForNow</h1>
+<nav class="nav_bar">
+  <ul>
+  <li><a href="/home">Home</a></li>
+  <li style="float:right"><a href="/register">Settings</a></li>
+</ul>
+</nav>
+
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Where the world chats...';
+var txt2 = 'Watcha waitin for?';
+
+var speed = 200;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
+
+</body>
+</html>
