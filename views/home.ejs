@@ -24,7 +24,7 @@ var i = 0;
 var j = 0;
 let str = '';
 
-var txt = ['Where the world chats...','What are you waiting for?','Sign up now!',' And lets ChatForNow'];
+var txt = ['Where the world chats...','What are you waiting for?','Sign up now!',' and lets ChatForNow!'];
 
 var speed = 100;
 var speedb = 30;
@@ -63,8 +63,14 @@ function typeRemover(){
   }
 }
 setTimeout(typeRemover, speed*31);
-setTimeout(reset,(speed+speedb)*60);
-setTimeout(typeWriter1, (speed+speedb)*61);
+setTimeout(reset,(speed+speedb)*31);
+setTimeout(typeWriter1, (speed+speedb)*32);
+setTimeout(typeRemover, speed*73);
+setTimeout(reset,(speed+speedb)*69);
+setTimeout(typeWriter1, (speed+speedb)*69);
+setTimeout(typeRemover, speed*110);
+setTimeout(reset,(speed+speedb)*96);
+setTimeout(typeWriter1, (speed+speedb)*96);
 
 typeWriter1();
 </script>
