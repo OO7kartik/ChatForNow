@@ -22,41 +22,51 @@
 <script>
 var i = 0;
 var j = 0;
-var txt2 = 'Watcha waitin for?';
-var txt1 = 'Where the world chats...';
+let str = '';
 
-var txt = ['Where the world chats...','What are you waiting for?','Sign up now!',' And lets get chatting!'];
+var txt = ['Where the world chats...','What are you waiting for?','Sign up now!',' And lets ChatForNow'];
 
 var speed = 100;
+var speedb = 30;
+
+let arr=[];
 
 function typeWriter1() {
   if (i < txt[j].length) {
-    document.getElementById("demo").innerHTML += txt[j].charAt(i);
+    arr.push(txt[j].charAt(i));
+    arr.forEach( (item) => {
+      str += item;
+    })
+    document.getElementById("demo").innerHTML = str;
+    str='';
     i++;
     setTimeout(typeWriter1, speed);
   }
 }
-typeWriter1();
-setTimeout(reset,speed*32);
-setTimeout(typeWriter1, speed*33);
-setTimeout(reset,speed*65);
-setTimeout(typeWriter1, speed*66);
-setTimeout(reset,speed*84);
-setTimeout(typeWriter1, speed*85);
 
 function reset(){
   j++;
   i = 0;
-  document.getElementById("demo").innerHTML = "";
+  arr=[];
 }
 
-function typeWriter2() {
-  if (j < txt2.length) {
-    document.getElementById("demo").innerHTML += txt2.charAt(j);
-    j++;
-    setTimeout(typeWriter2, speed);
+function typeRemover(){
+  if (i > 0) {
+    arr.pop();
+    arr.forEach( (item) => {
+      str += item;
+    })
+    document.getElementById("demo").innerHTML = str;
+    str='';
+    i--;
+    setTimeout(typeRemover, speedb);
   }
 }
+setTimeout(typeRemover, speed*31);
+setTimeout(reset,(speed+speedb)*60);
+setTimeout(typeWriter1, (speed+speedb)*61);
+
+typeWriter1();
 </script>
 
 </body>
