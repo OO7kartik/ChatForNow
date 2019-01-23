@@ -14,12 +14,21 @@ html{
   z-index: -10;
 }
 
+body{
+  padding: 0;
+  margin: 0;
+}
+
 button{
+  padding: 0;
+  margin: 0;
   position: absolute;
   top: 250px;
 }
 
 h1{
+  padding: 0;
+  margin: 0;
   font-size: 100px;
   color: 	#32CD32;
   position: absolute;
@@ -32,6 +41,8 @@ h1{
 }
 
 nav{
+  padding: 0;
+  margin: 0;
   position: sticky;
   top: 0px;
 }
@@ -69,13 +80,15 @@ li a:hover {
 }
 
 li {
+  padding: 0;
+  margin: 0;
   display: inline;
   float: left;
 }
 
 a{
   display: block;
-  padding: 8px;
+  padding: 0px;
   background-color: #dddddd;
 }
 
@@ -98,4 +111,31 @@ a{
   position: relative;
   top:170px;
   font-size: 30px;
+}
+
+img a{
+  display: block;
+  text-decoration:none;
+}
+
+#youtube{
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  left: 20px;
+  top: 260px;
+  height: 50px;
+  width: 55px;
+}
+
+#google{
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  left: 20px;
+  top: 200px;
+  height:50px;
+  width: 55px;
 }
