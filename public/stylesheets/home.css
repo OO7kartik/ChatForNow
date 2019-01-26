@@ -118,6 +118,17 @@ img a{
   text-decoration:none;
 }
 
+#google{
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  left: 20px;
+  top: 200px;
+  height:50px;
+  width: 55px;
+}
+
 #youtube{
   margin: 0;
   padding: 0;
@@ -129,13 +140,13 @@ img a{
   width: 55px;
 }
 
-#google{
+#instagram{
   margin: 0;
   padding: 0;
   display: block;
   position: fixed;
   left: 20px;
-  top: 200px;
+  top: 320px;
   height:50px;
   width: 55px;
 }

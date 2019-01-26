@@ -1,23 +1,82 @@
-body{
-	background-image: url(falling_binary.jpeg);
-	height: 626px;
+html, body , h1, img{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+    }
+
+img{
+  display: block;
+  position: fixed;
+	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+  background-size: cover;
 	text-align: center;
+	z-index: -1;
+}
 
+nav{
+  position: sticky;
+  top: 0px;
+  display: block;
+}
+
+.nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  display: block;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: #48fb47;
+  background-color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #48fb47;
+  color: #000;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+.active {
+  background-color: #006400;
+  color: #000;
 }
 
 header{
 	position: relative;
-	top: 80px;
+	text-align: center;
+	top: 150px;
 	color: #48fb47;
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/login_hack.png);
-	height: 270px;
+	height:310px;
 	background-position: center;
 	background-size: cover;
 	width: 500px;
 	margin: auto;
+	z-index: 1;
+	padding: 0 0 0 0;
 }
 
 .form input{
