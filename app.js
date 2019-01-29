@@ -41,7 +41,7 @@ app.use('/Login', loginRouter);
 //creating our error 422
 app.use(function(err,req,res,next){
   var router = express.Router();
-  res.render('register');
+  res.render('register_fill');
 });
 
 // catch 404 and forward to error handler

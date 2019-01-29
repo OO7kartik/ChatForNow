@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="ChatOn, The place where the whole worlds on.">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style_register.css">
+	</head>
+
+<img src="/images/falling_binary.jpeg" >
+
+	<body>
+
+		<nav class="nav_bar">
+		  <ul>
+		  <li><a href="/home">Home</a></li>
+		  <li style="float:right"><a href="/register">Register</a></li>
+			<li style="float:right"><a href="/login">Login</a></li>
+		</ul>
+		</nav>
+
+		<header>
+			<h1 class="H1">ChatForNow</h1>
+			<hr/>
+			<p class="sen1"> Register now to <big>Chat</big> with the <b>world!</b></p>
+			<hr/>
+			<br>
+			<br>
+
+
+			<div class="register_page">
+            	<div class="form">
+        	    	<form class = "register-form" method="POST">
+        	    		Name: <input type="text" name="name" placeholder="your name..">
+        	    		<br>
+        	    		<br>
+       	     			Email_id: <input type="text" name="email" placeholder="your email_id..">
+       	     			<br>
+       	     			<br>
+       	     			Password: <input type="password" name="password" placeholder="your password..">
+       	     			<br>
+       	     			<br>
+       	     			<button>Register</button>
+       	     			<a href="Login.html" id="linky">Already a member?</a>
+            		</form>
+           		</div>
+        </div>
+        </header>
+	</body>
+	<p id="fill_in"></p>
+
+	<script>
+	var i = 0;
+
+	var txt = 'Please enter all the details...';
+
+	var speed = 20;
+
+	let arr=[];
+
+	function typeWriter1() {
+		if (i < txt.length) {
+			document.getElementById("fill_in").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter1, speed);
+		}
+	}
+	typeWriter1();
+	</script>
+
+</html>
