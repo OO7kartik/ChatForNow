@@ -38,6 +38,7 @@ h1{
   left: 30%;
   margin: 0px;
   text-align: center;
+  top: 50px;
 }
 
 nav{
@@ -45,6 +46,8 @@ nav{
   margin: 0;
   position: sticky;
   top: 0px;
+  border-style: solid;
+  border-color: #00FF00;
 }
 
 .nav_bar {
@@ -127,6 +130,10 @@ img a{
   top: 200px;
   height:50px;
   width: 55px;
+  border-style: solid;
+  border-color: #228B22;
+  border-radius: 70%;
+  border-width: 2px;
 }
 
 #youtube{
@@ -138,6 +145,10 @@ img a{
   top: 260px;
   height: 50px;
   width: 55px;
+  border-style: solid;
+  border-color: #228B22;
+  border-radius: 70%;
+  border-width: 2px;
 }
 
 #instagram{
@@ -149,4 +160,8 @@ img a{
   top: 320px;
   height:50px;
   width: 55px;
+  border-style: solid;
+  border-color: #228B22;
+  border-radius: 70%;
+  border-width: 2px;
 }

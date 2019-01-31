@@ -9,6 +9,7 @@ img{
   display: block;
   position: fixed;
 	height: 100%;
+  width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
   background-size: cover;
@@ -20,6 +21,8 @@ nav{
   position: sticky;
   top: 0px;
   display: block;
+  border-style: solid;
+  border-color: #00FF00;
 }
 
 .nav_bar {
@@ -78,6 +81,9 @@ header{
 	margin: auto;
 	z-index: 1;
 	padding: 0 0 0 0;
+  border-style: solid;
+  border-color: #00FF00;
+  border-width: 5px;
 }
 
 .form input{
