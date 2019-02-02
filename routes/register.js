@@ -21,7 +21,7 @@ router.post('/',urlencodedParser, function(req,res,next){
     return res.render('register_fill' , {msg: "Your name is required"} );
   }else if( !validate(req.body.email) ){
     return res.render('register_fill' , {msg: "Enter a valid email"} );
-  }else if( req.body.password < 6){
+  }else if( req.body.password.length < 6){
     return res.render('register_fill' , {msg: "Password minimum 6 characters"} );
   }else{
   User = new register_details(req.body)
@@ -29,8 +29,10 @@ router.post('/',urlencodedParser, function(req,res,next){
     console.log(req.body);
     // have to make msg display on home screen for 2sec (like fade)
     //return res.render("home",{msg: "Succesfully registered!"})
-    return res.render("register_done", { data: {name: User.name, email: User.email, password: User.password} });
-  }).catch(next);
+    return res.status(200).render("register_done", { data: {name: User.name, email: User.email, password: User.password} });
+  }).catch(() => {
+    return res.render('register_fill' , {msg: 'Email already registered'});
+  });
 }
 })
 
