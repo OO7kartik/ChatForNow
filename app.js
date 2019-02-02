@@ -41,7 +41,9 @@ app.use('/Login', loginRouter);
 //creating our error 422
 app.use(function(err,req,res,next){
   var router = express.Router();
-  res.render('register_fill');
+  console.log(err);
+  console.log(err.message);
+  res.render('register_fill' , {msg: 'Email already registered'});
 });
 
 // catch 404 and forward to error handler

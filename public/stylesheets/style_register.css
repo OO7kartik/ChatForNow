@@ -115,13 +115,13 @@ a{
 }
 
 #fill_in{
-  color: red;
+  color: black;
   display: block;
   position: absolute;
   bottom: 430px;
   left: 40%;
-  font-size: 30px;
-  font-weight:bold;
+  font-size: 25px;
   text-align: center;
+  text-shadow: 2px 0 0 red, -2px 0 0 red, 0 2px 0 red, 0 -2px 0 red, 1px 1px red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red;
  z-index: 20;
 }
