@@ -48,6 +48,25 @@
   </header>
 
 </body>
-<p id="fill_in"><%= data.msg %></p>
+<p id="fill_in"></p>
+
+<script>
+var i = 0;
+
+var txt = "<%= data.msg %>" ;
+
+var speed = 20;
+
+let arr=[];
+
+function typeWriter1() {
+  if (i < txt.length) {
+    document.getElementById("fill_in").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter1, speed);
+  }
+}
+typeWriter1();
+</script>
 
 </html>
