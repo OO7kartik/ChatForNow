@@ -133,9 +133,10 @@ img a{
   border-style: solid;
   border-color: #228B22;
   border-width: 2px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  opacity: 0.5;
 }
 
 #youtube{
@@ -150,9 +151,10 @@ img a{
   border-style: solid;
   border-color: #228B22;
   border-width: 2px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  opacity: 0.5;
 }
 
 #instagram{
@@ -167,9 +169,10 @@ img a{
   border-style: solid;
   border-color: #228B22;
   border-width: 2px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  opacity: 0.5;
 }
 
 #facebook{
@@ -184,96 +187,18 @@ img a{
   border-style: solid;
   border-color: #228B22;
   border-width: 2px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  opacity: 0.5;
 }
 
-#google:hover {
+#google:hover , #youtube:hover, #instagram:hover, #facebook:hover {
   width: 110px;
   height: 100px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-
-  -webkit-animation: gog 1s 1;
-  -webkit-animation-direction: alternate;
-  animation: gog 1s 1;
-  animation-direction: alternate;
-}
-#youtube:hover {
-  width: 110px;
-  height: 100px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-
-  -webkit-animation: yout 1s 1;
-  -webkit-animation-direction: alternate;
-  animation: yout 1s 1;
-  animation-direction: alternate;
-}
-
-#instagram:hover {
-  width: 110px;
-  height: 100px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-
-  -webkit-animation: inst 1s 1;
-  -webkit-animation-direction: alternate;
-  animation: inst 1s 1;
-  animation-direction: alternate;
-}
-#facebook:hover {
-  width: 110px;
-  height: 100px;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-
-  -webkit-animation: fb 1s 1;
-  -webkit-animation-direction: alternate;
-  animation: fb 1s 1;
-  animation-direction: alternate;
-}
-
-@-webkit-keyframes gog {
-  0%   {left: 0px; top: 200px;}
-  100%  {left: 100px; top: 200px;}
-}
-
-@keyframes gog {
-  0%   {left: 0px; top: 200px;}
-  100%  {left: 100px; top: 200px;}
-}
-
-
-@-webkit-keyframes yout {
-  0%   {left: 0px; top: 260px;}
-  100%  {left: 100px; top: 260px;}
-}
-
-@keyframes yout {
-  0%   {left: 0px; top: 260px;}
-  100%  {left: 100px; top: 260px;}
-}
-
-
-@-webkit-keyframes inst {
-  0%   {left: 0px; top: 320px;}
-  100%  {left: 100px; top: 320px;}
-}
-
-@keyframes inst {
-  0%   {left: 0px; top: 320px;}
-  100%  {left: 100px; top: 320px;}
-}
-
-
-@-webkit-keyframes fb {
-  0%   {left: 0px; top: 380px;}
-  100%  {left: 100px; top: 380px;}
-}
-
-@keyframes fb {
-  0%   {left: 0px; top: 380px;}
-  100%  {left: 100px; top: 380px;}
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg) translateX(65px);
+  border-color: red;
+  border-width: 10px;
+  opacity: 1;
 }
