@@ -6,7 +6,6 @@ var logger = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 //variables that require our routes
-var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var registerRouter = require('./routes/register');
 var homeRouter = require('./routes/home');
@@ -32,10 +31,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 //to display these pages
-app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/register', registerRouter);
-app.use('/home', homeRouter);
+app.use('/', homeRouter);
 app.use('/Login', loginRouter);
 
 
