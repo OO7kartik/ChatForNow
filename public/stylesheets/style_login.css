@@ -68,18 +68,20 @@ li {
 }
 
 header{
-	position: relative;
-	text-align: center;
-	top: 150px;
-	color: #48fb47;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/login_hack.png);
-	height:310px;
-	background-position: center;
-	background-size: cover;
-	width: 500px;
-	margin: auto;
-	z-index: 1;
-	padding: 0 0 0 0;
+  position: absolute;
+  text-align: center;
+  display: block;
+  top: 28%;
+  left: 32%;
+  color: #48fb47;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/login_hack.png);
+  height:310px;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  margin: auto;
+  z-index: 1;
+  padding: 0 0 0 0;
   border-style: solid;
   border-color: #00FF00;
   border-width: 5px;
@@ -121,8 +123,10 @@ a{
   color: black;
   display: block;
   position: absolute;
-  bottom: 430px;
-  left: 40%;
+  margin:0;
+  padding: 0;
+  left: 42%;
+  top: 42%;
   font-size: 25px;
   text-align: center;
   text-shadow: 2px 0 0 red, -2px 0 0 red, 0 2px 0 red, 0 -2px 0 red, 1px 1px red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red;

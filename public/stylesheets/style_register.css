@@ -1,4 +1,4 @@
-html, body , h1, img{
+body , h1, img{
         margin: 0;
         padding: 0;
         border: 0;
@@ -69,9 +69,11 @@ li {
 
 
 header{
-	position: relative;
+	position: absolute;
 	text-align: center;
-	top: 150px;
+  display: block;
+	top: 28%;
+  left: 32%;
 	color: #48fb47;
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/login_hack.png);
 	height:310px;
@@ -119,9 +121,12 @@ a{
   display: block;
   position: absolute;
   bottom: 430px;
-  left: 40%;
   font-size: 25px;
+  margin:0;
+  padding: 0;
+  left: 42%;
+  top: 42%;
   text-align: center;
   text-shadow: 2px 0 0 red, -2px 0 0 red, 0 2px 0 red, 0 -2px 0 red, 1px 1px red, -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red;
- z-index: 20;
+  z-index: 20;
 }
