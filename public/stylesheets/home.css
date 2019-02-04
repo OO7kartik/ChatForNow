@@ -30,15 +30,14 @@ h1{
   padding: 0;
   margin: 0;
   font-size: 100px;
-  color: 	#32CD32;
+  color: 	black;
   position: absolute;
-  display:inline;
-  list-style-type: none;
-  padding: 40px;
-  left: 30%;
-  margin: 0px;
+  display: block;
   text-align: center;
-  top: 50px;
+  top: 15%;
+  width: 100%;
+  text-shadow: 2px 0 0  #00FF00, -2px 0 0  #00FF00, 0 2px 0  #00FF00, 0 -2px 0  #00FF00, 1px 1px  #00FF00, -1px -1px 0  #00FF00, 1px -1px 0  #00FF00, -1px 1px 0  #00FF00;
+
 }
 
 nav{
@@ -48,6 +47,7 @@ nav{
   top: 0px;
   border-style: solid;
   border-color: #00FF00;
+  width: 100%;
 }
 
 .nav_bar {
@@ -103,17 +103,11 @@ a{
 #demo{
   text-align: center;
   color: #48fb47;
-  position: relative;
-  top:150px;
+  position: absolute;
+  display: block;
+  top:30%;
   font-size: 30px;
-}
-
-#demo2{
-  text-align: center;
-  color: #48fb47;
-  position: relative;
-  top:170px;
-  font-size: 30px;
+  width: 100%;
 }
 
 img a{
