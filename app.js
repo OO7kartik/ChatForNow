@@ -15,8 +15,10 @@ const register_details = require('./models/registerM');
 var app = express();
 
 //connecting to mongoose
-mongoose.connect('mongodb://localhost/register_details', {useNewUrlParser: true});
+mongoose.connect('mongodb://007kartik:mlabvA1`@ds123465.mlab.com:23465/chatfornow', {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
+
+//       mongodb://<dbuser>:<dbpassword>@ds123465.mlab.com:23465/chatfornow
 
 //url urlencodedParser
 const urlencodedParser = bodyParser.urlencoded({ extended: false});
