@@ -11,14 +11,22 @@ var registerRouter = require('./routes/register');
 var homeRouter = require('./routes/home');
 var loginRouter = require('./routes/Login');
 const register_details = require('./models/registerM');
+
+const leaves = require('./routes/index');
 //our express object
 var app = express();
 
 //connecting to mongoose
-mongoose.connect('mongodb://007kartik:mlabvA1`@ds123465.mlab.com:23465/chatfornow', {useNewUrlParser: true});
+mongoose.connect('mongodb://trial:trail123@ds123465.mlab.com:23465/chatfornow',{ useNewUrlParser: true },function(err){
+  if (err) console.log(err);
+    else console.log('mongo connected');
+});
 mongoose.Promise = global.Promise;
 
 //       mongodb://<dbuser>:<dbpassword>@ds123465.mlab.com:23465/chatfornow
+
+//they are saying do this
+// mongoose.connect('mongodb://user:password@host:port/dbname?authSource=dbWithUserCredentials')
 
 //url urlencodedParser
 const urlencodedParser = bodyParser.urlencoded({ extended: false});
@@ -37,6 +45,7 @@ app.use('/users', usersRouter);
 app.use('/register', registerRouter);
 app.use('/', homeRouter);
 app.use('/Login', loginRouter);
+app.use('/leaves', leaves);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
